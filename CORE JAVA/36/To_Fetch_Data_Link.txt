@@ -1,0 +1,5 @@
+We will fetch user details from the GitHub public API.
+
+API URL:
+
+https://api.github.com/users/octocat

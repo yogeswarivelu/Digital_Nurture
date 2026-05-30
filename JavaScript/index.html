@@ -1,0 +1,114 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .event-card {
+            background: white;
+            border: 1px solid gray;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 8px 12px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #loading {
+            display: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Local Community Event Portal</h1>
+
+    <!-- Filter -->
+    <label>Filter by Category:</label>
+
+    <select id="categoryFilter">
+        <option value="All">All</option>
+        <option value="Music">Music</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Sports">Sports</option>
+    </select>
+
+    <br><br>
+
+    <!-- Search -->
+    <input type="text" id="searchBox" placeholder="Search Event">
+
+    <!-- Events Container -->
+    <div id="eventContainer"></div>
+
+    <hr>
+
+    <!-- Registration Form -->
+    <h2>Event Registration</h2>
+
+    <form id="registrationForm">
+
+        <input type="text" name="username" placeholder="Enter Name">
+        <span class="error" id="nameError"></span>
+
+        <br><br>
+
+        <input type="email" name="email" placeholder="Enter Email">
+        <span class="error" id="emailError"></span>
+
+        <br><br>
+
+        <select name="selectedEvent">
+            <option value="">Select Event</option>
+            <option value="Music Night">Music Night</option>
+            <option value="Baking Workshop">Baking Workshop</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit" id="registerBtn">
+            Register
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <div id="loading">Loading events...</div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- External JS -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

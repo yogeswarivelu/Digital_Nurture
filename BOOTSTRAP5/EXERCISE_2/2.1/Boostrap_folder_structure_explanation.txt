@@ -1,0 +1,96 @@
+1. CSS Folder
+
+Path: dist/css/
+
+Purpose: Contains Bootstrap styling files.
+
+Used for:
+
+Colors
+Buttons
+Grid system
+Layout
+Forms
+Typography
+Utilities
+
+Examples you saw:
+
+bootstrap.css
+bootstrap.min.css
+bootstrap-grid.css
+bootstrap-reboot.css
+
+Meaning:
+
+File	                Purpose
+bootstrap.css	        Full readable Bootstrap CSS
+bootstrap.min.css	Compressed production version
+bootstrap-grid.css	Grid system only
+bootstrap-reboot.css	Browser style normalization
+
+Usually developers use:
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+2. JS Folder
+
+Path: dist/js/
+
+Purpose: Contains Bootstrap interactive components.
+
+Used for:
+
+Modal popup
+Dropdown
+Carousel
+Collapse navbar
+Tooltip
+Toast
+
+Examples:
+
+bootstrap.js
+bootstrap.min.js
+bootstrap.bundle.min.js
+
+Meaning:
+
+File	                   Purpose
+bootstrap.js	           Normal readable JS
+bootstrap.min.js	   Minified JS
+bootstrap.bundle.min.js	   JS + Popper included
+
+Most projects use: <script src="js/bootstrap.bundle.min.js"></script>
+
+because Popper is already included.
+
+3. Icons Folder
+
+Bootstrap icons are separate from Bootstrap package.
+
+Purpose: Provides icons for UI.
+
+Examples:
+
+house
+search
+trash
+calendar
+person
+
+Usage example: <i class="bi bi-house"></i>
+
+To use icons you install:
+
+npm install bootstrap-icons
+
+or use CDN.
+
+Short Explanation 
+
+CSS Folder: Contains Bootstrap styling files for layouts, colors, typography, forms, buttons, and grid system.
+
+JS Folder: Contains Bootstrap JavaScript plugins used for interactive components like modals, dropdowns, tooltips, and navbar collapse.
+
+Icons Folder: Contains Bootstrap icons used to display graphical UI symbols such as search, home, and user icons.
