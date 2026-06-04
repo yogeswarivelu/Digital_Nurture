@@ -1,141 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Local Community Event Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Local Community Event Portal</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
+<!-- Exercise 1 : Internal CSS -->
+<style>
 
-    <!-- Internal CSS -->
-    <style>
-        body{
-            background-color:#dceeff;
-        }
-    </style>
+body{
+background-color:#eef5ff;
+}
+
+</style>
+
+<!-- Exercise 5 : Google Font -->
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet"
+href="styles.css">
+
 </head>
+
 <body>
 
-    <!-- Inline CSS Example -->
-    <h1 style="color:red;">Local Community Event Portal</h1>
+<header id="mainHeader">
 
-    <header id="mainHeader">
-        <h2>Welcome to Our Community</h2>
+<h1 style="color:red;">
+Local Community Event Portal
+</h1>
 
-        <nav>
-            <ul class="navMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav>
 
-    <section>
-        <h2 class="sectionTitle">Upcoming Events</h2>
+<ul class="navMenu">
 
-        <div class="eventCard">
-            <h3>Tree Plantation Drive</h3>
-            <p>
-                Join us in making our community greener by planting
-                trees and promoting environmental awareness.
-            </p>
-        </div>
+<li><a href="#">Home</a></li>
+<li><a href="#">Events</a></li>
+<li><a href="#">Contact</a></li>
 
-        <div class="eventCard">
-            <h3>Food Festival</h3>
-            <p>
-                Experience a variety of local cuisines and support
-                small businesses in the area.
-            </p>
-        </div>
-    </section>
+</ul>
 
-    <section>
-        <h2 class="sectionTitle">Community Bulletin</h2>
+</nav>
 
-        <div class="newsArticle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed vitae neque sed lorem tincidunt posuere. Integer
-            feugiat risus vel augue facilisis, sit amet laoreet
-            lorem sagittis. Suspendisse potenti. Vestibulum ante
-            ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia curae. Nulla facilisi. Donec a lectus at sem
-            aliquet tincidunt. Morbi commodo, velit quis volutpat
-            commodo, nisl turpis tristique purus, vitae pellentesque
-            lorem nisl eget nunc.
-        </div>
-    </section>
+</header>
 
-    <section>
-        <h2 class="sectionTitle">Event Schedule</h2>
+<section class="eventCard">
 
-        <table>
-            <tr>
-                <th>Event</th>
-                <th>Date</th>
-                <th>Venue</th>
-            </tr>
+<h2>Upcoming Events</h2>
 
-            <tr>
-                <td>Tree Plantation</td>
-                <td>10 June</td>
-                <td>City Park</td>
-            </tr>
+<h3>Food Festival</h3>
 
-            <tr>
-                <td>Food Festival</td>
-                <td>15 June</td>
-                <td>Community Hall</td>
-            </tr>
+<p>
+Join the annual food festival with local cuisine and music.
+</p>
 
-            <tr>
-                <td>Health Camp</td>
-                <td>20 June</td>
-                <td>Town Center</td>
-            </tr>
+<a href="#">Register Now</a>
 
-            <tr>
-                <td>Book Fair</td>
-                <td>25 June</td>
-                <td>Library</td>
-            </tr>
-        </table>
-    </section>
+</section>
 
-    <section>
-        <h2 class="sectionTitle">Volunteer Registration</h2>
+<section class="eventCard">
 
-        <form>
+<h2>Event Schedule</h2>
 
-            <label>Name:</label><br>
-            <input type="text" class="selectedField"><br><br>
+<table>
 
-            <label>Email:</label><br>
-            <input type="email"><br><br>
+<tr>
 
-            <button class="cta-button">
-                Register
-            </button>
+<th>Event</th>
+<th>Date</th>
+<th>Location</th>
 
-        </form>
-    </section>
+</tr>
 
-    <section>
-        <h2 class="sectionTitle">Visibility Demo</h2>
+<tr>
 
-        <div class="hiddenBox">
-            visibility:hidden example
-        </div>
+<td>Food Festival</td>
+<td>10 June</td>
+<td>City Hall</td>
 
-        <div class="noneBox">
-            display:none example
-        </div>
-    </section>
+</tr>
+
+<tr>
+
+<td>Music Night</td>
+<td>12 June</td>
+<td>Central Park</td>
+
+</tr>
+
+<tr>
+
+<td>Art Show</td>
+<td>15 June</td>
+<td>Community Center</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section class="eventCard">
+
+<h2>Registration Form</h2>
+
+<form>
+
+<input type="text"
+placeholder="Enter Name">
+
+<input type="email"
+placeholder="Enter Email">
+
+</form>
+
+</section>
+
+<section class="eventCard">
+
+<h2>Visibility Demo</h2>
+
+<div class="hiddenBox">
+
+visibility:hidden example
+
+</div>
+
+<div class="noneBox">
+
+display:none example
+
+</div>
+
+</section>
+
+<section class="newsSection">
+
+<h2>Community Bulletin</h2>
+
+<p>
+
+The city council announces new environmental initiatives for community welfare.
+Residents are encouraged to participate in public events, workshops,
+awareness programs, and development campaigns.
+
+Many new activities will take place across parks, schools,
+libraries, and recreational centers.
+
+The portal provides updated schedules,
+registrations, announcements, and community support resources.
+
+</p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Local Community Event Portal
+
+</p>
+
+</footer>
 
 </body>
+
 </html>
