@@ -1,271 +1,352 @@
-/* Exercise 2 : CSS Syntax & Comments */
 
-/* Universal Selector */
+/* =====================================
+   Universal Reset
+===================================== */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Body Styling */
+
+/* =====================================
+   Body Styles
+===================================== */
 
 body{
 
-font-family:'Poppins',sans-serif;
+    font-family:'Poppins', sans-serif;
 
-background-image:
-url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-color:#dceeff;
 
-background-color:#dfefff;
+    background-image:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
 
-background-size:cover;
+    background-size:cover;
 
-padding:20px;
+    background-attachment:fixed;
 
+    color:#222;
+
+    line-height:1.8;
 }
 
-/* ID Selector */
+label{
+    color:white;
+    font-weight:bold;
+}
+
+/* =====================================
+   Header Styles
+===================================== */
 
 #mainHeader{
 
-background:
-linear-gradient(to right,#0066cc,#00cc99);
+    background:rgba(0,0,0,0.6);
 
-color:white;
+    padding:20px;
 
-padding:20px;
+    text-align:center;
 
-text-align:center;
-
+    color:white;
 }
 
-/* Navigation */
+
+/* =====================================
+   H2 Element Selector
+===================================== */
+
+h2{
+
+    margin:20px 0;
+
+    font-size:30px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+}
+
+
+/* =====================================
+   Gradient Section Headers
+===================================== */
+
+.sectionTitle{
+
+    background:linear-gradient(
+        to right,
+        #0077b6,
+        #00b4d8
+    );
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:5px;
+}
+
+
+/* =====================================
+   Event Card Class Selector
+===================================== */
+
+.eventCard{
+
+    background:rgba(255,255,255,0.85);
+
+    border:2px solid #0077b6;
+
+    padding:20px;
+
+    margin:20px;
+
+    border-radius:10px;
+}
+
+
+/* =====================================
+   Grouping Selector
+===================================== */
+
+h3,
+p{
+
+    color:#333;
+
+    text-align:justify;
+}
+
+
+/* =====================================
+   Typography Styles
+===================================== */
+
+h3{
+
+    font-style:italic;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+}
+
+p{
+
+    line-height:1.8;
+
+    letter-spacing:1px;
+}
+
+
+/* =====================================
+   Navigation Menu
+===================================== */
 
 .navMenu{
 
-list-style:none;
+    list-style-type:none;
 
-display:flex;
+    list-style-position:inside;
 
-justify-content:center;
+    display:flex;
 
-gap:25px;
+    justify-content:center;
 
-margin-top:15px;
+    gap:20px;
 
+    margin-top:15px;
 }
 
-/* Link Styling */
+.navMenu li{
+
+    padding:10px;
+
+    margin:5px;
+}
+
+
+/* =====================================
+   Link Styling
+===================================== */
 
 a:link{
 
-color:blue;
+    color:white;
 
-text-decoration:none;
-
-}
-
-a:hover{
-
-color:red;
-
+    text-decoration:none;
 }
 
 a:visited{
 
-color:purple;
+    color:lightgray;
+}
 
+a:hover{
+
+    color:yellow;
 }
 
 a:active{
 
-color:green;
-
+    color:red;
 }
 
-/* Element Selector */
 
-h2{
-
-font-size:30px;
-
-margin-bottom:15px;
-
-text-transform:uppercase;
-
-letter-spacing:2px;
-
-}
-
-/* Grouping Selector */
-
-h3,p{
-
-line-height:1.8;
-
-text-align:justify;
-
-}
-
-/* Class Selector */
-
-.eventCard{
-
-background:rgba(255,255,255,0.8);
-
-border:2px solid #333;
-
-padding:20px;
-
-margin:25px 0;
-
-outline:3px dashed orange;
-
-}
-
-/* Typography */
-
-h3{
-
-font-style:italic;
-
-font-weight:bold;
-
-}
-
-/* Table Styling */
+/* =====================================
+   Table Styling
+===================================== */
 
 table{
 
-width:100%;
+    width:90%;
 
-border-collapse:collapse;
+    margin:20px auto;
 
-text-align:center;
+    border-collapse:collapse;
 
-margin-top:15px;
-
+    background:white;
 }
 
-th,td{
+th,
+td{
 
-border:1px solid black;
+    border:1px solid black;
 
-padding:12px;
+    padding:12px;
 
-background-color:#f4f4f4;
+    text-align:center;
+}
 
+th{
+
+    background:#0077b6;
+
+    color:white;
 }
 
 tr:nth-child(even){
 
-background-color:#d6ecff;
-
+    background:#f2f2f2;
 }
 
-/* Form */
+
+/* =====================================
+   Form Styles
+===================================== */
 
 input{
 
-padding:10px;
+    padding:8px;
 
-margin:10px;
-
-border:1px solid black;
-
+    width:250px;
 }
 
-input:focus{
+.selectedField{
 
-outline:4px solid red;
-
+    outline:3px solid orange;
 }
 
-/* Visibility */
+
+/* =====================================
+   CTA Button
+===================================== */
+
+.cta-button{
+
+    background-color:#007BFF;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    cursor:pointer;
+}
+
+
+/* =====================================
+   Multi Column Article
+===================================== */
+
+.newsArticle{
+
+    background:white;
+
+    padding:20px;
+
+    margin:20px;
+
+    column-count:2;
+
+    column-gap:30px;
+
+    column-rule:1px solid gray;
+}
+
+
+/* =====================================
+   Visibility Demo
+===================================== */
 
 .hiddenBox{
 
-visibility:hidden;
+    visibility:hidden;
 
-background:yellow;
+    background:yellow;
 
-padding:15px;
-
-margin:10px;
-
+    padding:10px;
 }
 
 .noneBox{
 
-display:none;
+    display:none;
 
+    background:pink;
+
+    padding:10px;
 }
 
-/* Multi Column */
 
-.newsSection{
-
-background:white;
-
-padding:20px;
-
-column-count:2;
-
-column-gap:30px;
-
-column-rule:1px solid gray;
-
-}
-
-/* Footer */
-
-footer{
-
-background:#222;
-
-color:white;
-
-padding:15px;
-
-text-align:center;
-
-margin-top:20px;
-
-}
-
-/* Responsive Design */
+/* =====================================
+   Responsive Design
+===================================== */
 
 @media screen and (max-width:768px){
 
-.navMenu{
+    .navMenu{
 
-flex-direction:column;
+        flex-direction:column;
 
-}
+        align-items:center;
+    }
 
-h2{
+    h1{
 
-font-size:22px;
+        font-size:6vw;
+    }
 
-}
+    h2{
 
-body{
+        font-size:5vw;
+    }
 
-padding:5vw;
+    .eventCard{
 
-}
+        width:90%;
+        margin:auto;
+        margin-top:15px;
+    }
 
-img{
+    .newsArticle{
 
-width:60%;
+        column-count:1;
+    }
 
-}
+    img{
 
-.newsSection{
-
-column-count:1;
-
-}
-
+        width:80%;
+    }
 }
